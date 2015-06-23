@@ -1,0 +1,35 @@
+body {
+  background-image: url(../img/bg5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.centered-container {
+  margin-top: 120px;
+  text-align: center;
+}
+.main-header{
+	padding: 1px;
+	background-image: url(../img/banner.jpg);
+	/*border:1px solid red;*/
+}
+.main-header-avatar {
+  display: block;
+  margin: 0 auto;
+  margin-top: -70px;
+  border: 3px solid white;
+  border-radius: 999px;
+  box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+}
+.main-header h1{
+	color:white;
+	font-weight: 300;
+	font-size: 50px;
+	font-family: 'Open Sans','helvetica',arial,sans-serif;
+	margin-top:20px;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
+}
