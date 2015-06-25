@@ -78,12 +78,12 @@ ul.inline-items li {
   padding: 30px 60px;
   text-align: center;
 }
-.info-section header h2,.info-education header h2{
+.info-section header h2,.info-education header h2,.touch_list_title,.live_title{
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.info-section__title:after,.info-education__title:after{
+.info-section__title:after,.info-education__title:after,.touch_list_title:after,.live_title:after{
   content:"";
   text-align: center;
   display:block;
@@ -176,6 +176,7 @@ ul.inline-items li {
   padding-top:30px;
   text-align: center;
   background-color: #fff;
+  overflow: hidden;
 }
 .info-photo__title{
   font-size: 28px;
@@ -206,4 +207,90 @@ ul.inline-items li {
 }
 .photo_list_img{
   width: 100%;
+}
+.touch_list{
+  background-color: #fff;
+  padding: 30px 60px;
+  text-align: center;
+  border-top: 1px solid #EEE;
+  overflow: hidden;
+  clear: left;
+}
+.touch_list ul{
+  list-style: none;
+  padding: 0;
+}
+.touch_list ul li{
+  float: left;
+  width: 210px;
+  margin:0;
+}
+.touch_list_title{
+  margin-bottom: 60px;
+}
+.touch_img1{
+  background-image: url(../img/fb-icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 160px;
+}
+.touch_img2{
+  background-image: url(../img/twitter-icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 160px;
+}
+.touch_img3{
+  background-image: url(../img/linkedin-icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 160px;
+}
+.touch_img4{
+  background-image: url(../img/email-icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 160px;
+}
+.live_message{
+  padding: 30px;
+  background-color: #fff;
+  border-top: 1px solid #EEE;
+}
+.live_title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.message_form{
+  width: 40%;
+  margin: 0 auto;
+}
+.box{
+  position: relative;
+  padding: 10px;
+}
+.label-left{
+  position: absolute;
+  top:18px;
+  left: -100%;
+  width: 100%;
+  text-align: right;
+}
+.message_form input,
+.message_form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding:8px;
+  width: 100%;
+}
+.message_form button {
+  border: none;
+  border-radius: 9999px;
+  background: #ffd524;
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #fff;
+  box-shadow: 0 3px 0 #daae1d;
+  width: 100%;
+  padding: 10px;
 }
