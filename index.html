@@ -26,6 +26,7 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
     See: http://necolas.github.io/normalize.css/
     -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
     <link href='http://fonts.useso.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <!--
     Our own stylesheet.
@@ -40,7 +41,7 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
             <img src="img/teng.jpg" class="main-header-avatar"/>
             <h1>Hi, I'm Teng Bao</h1>
           </header>
-          <nav class="main-nav">
+          <nav class="main-nav" id="nav">
             <ul class="nostyle inline-items">
               <li><a href="#">Work</a></li>
               <li><a href="#">Experience</a></li>
@@ -50,6 +51,9 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
           </nav>
         </div>
           <section class="info-section whatido">
+            <div class="toggle-div">
+              <a href="#nav" id="toggle">Menu</a>
+            </div>
             <header>
               <h2 class="info-section__title">What I Do</h2>
               <p class="info-section__description">I'm Teng. I design and develop things on the web. Oh, and I like curry.</p>
@@ -154,5 +158,21 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
             </form>
           </div>
     </div>
+    <script src="js/responsive-nav.js"></script>
+    <script type="text/javascript">
+      var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
+        animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
+        transition: 400, // Integer: 过渡效果的执行速度，以毫秒（millisecond）为单位
+        label: "", // String: Label for the navigation toggle
+        insert: "after", // String: Insert the toggle before or after the navigation
+        customToggle: "#toggle", // Selector: Specify the ID of a custom toggle
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+        debug: false, // Boolean: Log debug messages to console, true 或 false
+        init: function(){}, // Function: Init callback
+        open: function(){}, // Function: Open callback
+        close: function(){} // Function: Close callback
+      });
+    </script>
   </body>
 </html>
